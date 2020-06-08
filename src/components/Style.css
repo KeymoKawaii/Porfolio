@@ -1,0 +1,197 @@
+/* Style Général */
+*{
+    box-sizing: inherit;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    max-width: 100%;
+    box-sizing: inherit;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 30px;
+    margin: 1%;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+section{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: relative;
+}
+
+.PartBlanc{
+    background-color: rgb(209, 209, 209);
+    color: rgb(27, 27, 27);
+}
+
+.PartNoir{
+    background-color: rgb(27, 27, 27);
+    color: rgb(209, 209, 209);
+}
+
+  
+/* Style Général */
+
+/* Navigation */
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 7%;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+nav img{
+    width: 50px;
+    display: block;
+    margin: 15px;
+}
+
+
+nav ul{
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin: 1%;
+}
+
+
+.ColorDark{
+    background-color: rgb(27, 27, 27);
+    color: rgb(209, 209, 209);
+}
+
+.ColorDark a{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+/* Navigation */
+
+/* Home */
+.Accueil{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../images/landscape-2003756_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+.Accueil h1{
+    display: block;
+    margin: auto;
+    color: #eee;
+    text-align: center;
+    font-size: 46px;
+    animation: title 2s 0.5s both;
+}
+.Accueil h2{
+    display: block;
+    margin: auto;
+    color: #eee;
+    text-align: center;
+    font-size: 36px;
+    animation: title 2s 0.5s both;
+}
+.Accueil hr{
+    width: 60%;
+    margin: auto;
+    border: 1px solid white;
+    animation: hrTitle 2s 0.5s both;
+}
+
+.Propos div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Propos .imgLogo{
+    width: 25%;
+    min-width: 300px;
+}
+.Propos .imgLogo img{
+    width: 100%;
+    min-width: 300px;
+}
+.Propos p{
+    width: 50%;
+    min-width: 300px;
+    margin: 10px;
+}
+.Propos hr{
+    width: 50%;
+    border: 1px solid black;
+}
+
+.Formation .BullesFormation{
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 300px;
+    padding: 1%;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.Formation .BullesFormation hr{
+    border: rgb(27, 27, 27) 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+
+/* ANIMATION */
+@keyframes title{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+    @keyframes hrTitle{
+        from{
+          width: 0%;
+          opacity: 0;
+        } to{
+            width: 50%;
+            opacity: 1;
+        }
+}
