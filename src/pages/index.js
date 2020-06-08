@@ -22,8 +22,8 @@ const IndexPage = (data) => (
 
     <Propos />
     <Formation/>
-    <ExpPro />
-    <Projet />
+    {/* <ExpPro />
+    <Projet /> */}
   </Layout>
 )
 
