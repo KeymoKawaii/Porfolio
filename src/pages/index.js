@@ -10,25 +10,34 @@ import Formation from "./Section/Formation";
 import ExpPro from './Section/ExpPro';
 import Projet from "./Section/Projet";
 
-const IndexPage = (data) => (
-  <Layout>
-    <SEO title="Home" />
+// import Alert from './../Tools/Alert';
 
-    <div className="Accueil">
-      <h1>Paolo Trapu</h1>
-      <hr/>
-      <h2>Développeur Web</h2>
-    </div>
+export default class Index extends React.Component{
+  componentDidMount() {
+    alert("Dû au Covid ce site à du être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
+  }
 
-    <Propos />
-    <Formation/>
-    {/* <ExpPro />
-    <Projet /> */}
-  </Layout>
-)
-
-export default IndexPage
-
+  render(){
+      return(
+        <Layout>
+        <SEO title="Développeur Web" />
+    
+        {/* <Alert /> */}
+    
+        <div className="Accueil">
+          <h1>Paolo Trapu</h1>
+          <hr/>
+          <h2>Développeur Web</h2>
+        </div>
+    
+        <Propos />
+        <Formation/>
+        {/* <ExpPro />
+        <Projet /> */}
+      </Layout>
+      )
+  }
+}
 
 // export const query = graphql`
 //   query MyQuery{
