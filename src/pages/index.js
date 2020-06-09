@@ -22,8 +22,6 @@ export default class Index extends React.Component{
         <Layout>
         <SEO title="Développeur Web" />
     
-        {/* <Alert /> */}
-    
         <div className="Accueil">
           <h1>Paolo Trapu</h1>
           <hr/>

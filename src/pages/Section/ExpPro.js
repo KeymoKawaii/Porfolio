@@ -4,21 +4,21 @@ export default class ExpPro extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          value: 4
+          value: 0
         };
         this.MoreValue = this.MoreValue.bind(this);
         this.LessValue = this.LessValue.bind(this);
     }
     
     MoreValue = () =>{
-        if(this.state.value > 3){
-            this.setState = {
-                value: 0
-              };
+        if(this.state.value   < 0){
+            this.setState({ 
+                value: this.state.value + 1 
+            });
         }else{
-            this.state = {
-                value: +1
-              };
+            this.setState({ 
+                count: this.state.count = 0 
+            })
         }
     }
     

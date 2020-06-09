@@ -23,7 +23,7 @@ export default class Propos extends React.Component{
                     développement informatique. Je souhaite entreprendre une alternance dans le but de consolider mes compétences.
                     <br/>
                     Je suis passionné par l'informatique depuis plusieurs années maintenant, j'espère pouvoir monter en compétences grâce à une veille permanante et une entreprise qui me
-                    permettra de me d'améliorer avec mes futurs collaborateurs.
+                    permettra de m'améliorer avec mes futurs collaborateurs.
                 </p>
                 </div>
             </section>
