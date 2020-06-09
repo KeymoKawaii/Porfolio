@@ -14,7 +14,7 @@ import Projet from "./Section/Projet";
 
 export default class Index extends React.Component{
   componentDidMount() {
-    alert("Dû au Covid ce site à du être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
+    alert("Dû au Covid ce site à dû être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
   }
 
   render(){
