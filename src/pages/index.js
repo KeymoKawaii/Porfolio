@@ -1,4 +1,6 @@
-import React from "react"
+import React, { Fragment } from "react";
+import { StaticQuery, graphql } from "gatsby";
+import {ReactMarkdown} from "react-markdown";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,7 +16,7 @@ import Projet from "./Section/Projet";
 
 export default class Index extends React.Component{
   componentDidMount() {
-    alert("Dû au Covid ce site à dû être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
+    alert("Suite au Covid ce site à dû être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
   }
 
   render(){
@@ -30,23 +32,10 @@ export default class Index extends React.Component{
     
         <Propos />
         <Formation/>
-        {/* <ExpPro />
-        <Projet /> */}
+        <ExpPro />
+        <Projet />
+        
       </Layout>
       )
   }
 }
-
-// export const query = graphql`
-//   query MyQuery{
-//     allStrapiArticle{
-//       nodes{
-//         title
-//         content
-//         image{
-//           publicURL
-//         }
-//       }
-//     }
-//   }
-//   `

@@ -77,14 +77,24 @@ nav img{
 
 
 nav ul{
-    width: 40%;
+    width: 50%;
     min-width: 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     position: absolute;
     right: 5px;
     bottom: 5px;
     margin: 1%;
+    list-style-type: none;
+}
+
+nav ul li{
+    min-width: 75px;
+    margin: 7px;
+}
+nav ul li:hove{
+    text-decoration: underline;
 }
 
 

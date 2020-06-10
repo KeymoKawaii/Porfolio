@@ -1,8 +1,10 @@
 import React from 'react';
 import "animate.css/animate.min.css";
+import { StaticQuery } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Logonoir from '../../images/Logonoir.png';
 import BullesProjet from './../../components/BullesProjet';
+
 
 export default class Projet extends React.Component{
     render(){
@@ -11,11 +13,33 @@ export default class Projet extends React.Component{
                 <h2>Mes Projet</h2>
                 <hr/>
 
-                <BullesProjet
-                title="title"
-                entreprise="Description"
-                description="description2"
-                Link="Contact"/>
+                <StaticQuery
+                    query={graphql`
+                    query {
+                        allStrapiArticles {
+                        edges {
+                            node {
+                            strapiId
+                            title
+                            Content
+                            }
+                        }
+                        }
+                    }
+                    `}
+                    render={data =>
+                    data.allStrapiArticles.edges.map((edges, i) => {
+                    return (
+                        <section key={edges.node.strapiId}>
+                        <h3 href={`/node/${edges.node.strapiId}`}>
+                            {edges.node.title}
+                        </h3>
+                        <hr />
+                        <p>{edges.node.Content}</p>
+                        </section>
+                    )
+                    })}
+                    />
 
             </section>
         )

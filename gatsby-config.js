@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Paolo Trapu`,
@@ -33,15 +37,17 @@ module.exports = {
       options: {
         offset: -100
       }
+    },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        contentTypes: [
+          `articles`, 
+          `categories`
+        ],
+      },
     }
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     queryLimit: 1000, // Default to 100
-    //     contentTypes: [`articles`, `categories`],
-    //     singleTypes: [`home-page`, `contact`],
-    //   },
-    // }
   ],
 }
