@@ -49,10 +49,16 @@ section{
     background-color: rgb(209, 209, 209);
     color: rgb(27, 27, 27);
 }
+.PartBlanc hr{
+    border: 1px solid rgb(27, 27, 27);
+}
 
 .PartNoir{
     background-color: rgb(27, 27, 27);
     color: rgb(209, 209, 209);
+}
+.PartNoir hr{
+    border: 1px solid white;
 }
 
   
@@ -186,7 +192,37 @@ nav ul li:hove{
     margin-bottom: 3vh;
 }
 
-
+.ExpPro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ExpPro .Nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 250px;
+    margin: auto;
+}
+.ExpPro .Nav button{
+    font-size: 16px;
+    background-color: rgb(27, 27, 27);
+    color: rgb(209, 209, 209);
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: 0 9px rgba(153, 153, 153, 0.5);
+    margin: 5px;
+}
+.ExpPro .Nav button:active{
+    transform: translateY(4px);
+}
+.ExpPro .ExpProText{
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+}
 /* ANIMATION */
 @keyframes title{
     from{

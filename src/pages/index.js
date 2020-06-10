@@ -33,7 +33,7 @@ export default class Index extends React.Component{
         <Propos />
         <Formation/>
         <ExpPro />
-        <Projet />
+        {/* <Projet /> */}
         
       </Layout>
       )
