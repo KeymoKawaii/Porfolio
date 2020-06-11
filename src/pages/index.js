@@ -16,7 +16,7 @@ import ExpPro from './Section/ExpPro';
 
 export default class Index extends React.Component{
   componentDidMount() {
-    alert("Suite au Covid ce site à dû être mit en ligne le plus vite possible, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions !")
+    alert("Mon site est toujours en construction, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions ! :)")
   }
 
   render(){
