@@ -22,6 +22,9 @@ export default class Projet extends React.Component{
                             strapiId
                             title
                             Content
+                            slider{
+                                url
+                            }
                             }
                         }
                         }
@@ -30,13 +33,14 @@ export default class Projet extends React.Component{
                     render={data =>
                     data.allStrapiArticles.edges.map((edges, i) => {
                     return (
-                        <section key={edges.node.strapiId}>
+                        <div key={edges.node.strapiId}>
                         <h3 href={`/node/${edges.node.strapiId}`}>
                             {edges.node.title}
                         </h3>
                         <hr />
                         <p>{edges.node.Content}</p>
-                        </section>
+                        <img src={edges.node.slider.url} alt="" />
+                        </div>
                     )
                     })}
                     />
