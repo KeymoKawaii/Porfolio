@@ -10,7 +10,7 @@ import '../components/Style.css';
 import Propos from './Section/Apropos';
 import Formation from "./Section/Formation";
 import ExpPro from './Section/ExpPro';
-import Projet from "./Section/Projet";
+// import Projet from "./Section/Projet";
 
 // import Alert from './../Tools/Alert';
 
