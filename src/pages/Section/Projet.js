@@ -13,7 +13,7 @@ export default class Projet extends React.Component{
                 <h2>Mes Projet</h2>
                 <hr/>
 
-                <StaticQuery
+                {/* <StaticQuery
                     query={graphql`
                     query {
                         allStrapiArticles {
@@ -43,7 +43,7 @@ export default class Projet extends React.Component{
                         </div>
                     )
                     })}
-                    />
+                    /> */}
 
             </section>
         )
