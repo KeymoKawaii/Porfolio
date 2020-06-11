@@ -38,16 +38,16 @@ module.exports = {
         offset: -100
       }
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [
-          `articles`, 
-          `categories`
-        ],
-      },
-    }
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     queryLimit: 1000, // Default to 100
+    //     contentTypes: [
+    //       `articles`, 
+    //       `categories`
+    //     ],
+    //   },
+    // }
   ],
 }
