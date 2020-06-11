@@ -20,7 +20,7 @@ export default class Propos extends React.Component{
                     (Service civique, formations,...)
                     <br/>
                     Après une formation de développeur d’application hybride (React) dans le but d’avoir une première réelle formation dans le 
-                    développement informatique. Je souhaite entreprendre une alternance dans le but de consolider mes compétences.
+                    développement informatique, je souhaite entreprendre une alternance dans le but de consolider mes compétences.
                     <br/>
                     Je suis passionné par l'informatique depuis plusieurs années maintenant, j'espère pouvoir monter en compétences grâce à une veille permanente et une entreprise qui me
                     permettra de m'améliorer avec mes futurs collaborateurs.
