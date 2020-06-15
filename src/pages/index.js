@@ -10,15 +10,12 @@ import '../components/Style.css';
 import Propos from './Section/Apropos';
 import Formation from "./Section/Formation";
 import ExpPro from './Section/ExpPro';
-// import Projet from "./Section/Projet";
+import Projet from "./Section/Projet";
 
 // import Alert from './../Tools/Alert';
+import About from './Contact';
 
 export default class Index extends React.Component{
-  componentDidMount() {
-    alert("Mon site est toujours en construction, n'hésitez pas à venir dans les jours à venir pour voir les futures évolutions ! :)")
-  }
-
   render(){
       return(
         <Layout>
@@ -33,7 +30,8 @@ export default class Index extends React.Component{
         <Propos />
         <Formation/>
         <ExpPro />
-        {/* <Projet /> */}
+        <Projet />
+        <About />
         
       </Layout>
       )

@@ -3,6 +3,8 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
+import Dewan from '../images/DewanDev.png'
+
 export default class BullesProjet extends React.Component{
     render(){
         return(

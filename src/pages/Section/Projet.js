@@ -1,10 +1,9 @@
 import React from 'react';
 import "animate.css/animate.min.css";
-import { StaticQuery } from 'gatsby';
+// import { StaticQuery } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Logonoir from '../../images/Logonoir.png';
 import BullesProjet from './../../components/BullesProjet';
-
+import Dewan from '../../images/DewanDev.png'
 
 export default class Projet extends React.Component{
     render(){
@@ -44,6 +43,25 @@ export default class Projet extends React.Component{
                     )
                     })}
                     /> */}
+                    <div>                    
+                        <BullesProjet 
+                        title="Site de Dewan Développement"
+                        entreprise="Dewan Développement"
+                        description="Création du site web de Dewan Développement en accord avec les besoins de la startup."
+                        Link="DewanDev"/>
+
+                        <BullesProjet 
+                        title="Affiche pour We Ker"
+                        entreprise="We Ker"
+                        description="Création d'une affiche pour la permanence du Blosne de We Ker"
+                        Link="WeKer"/>
+
+                        <BullesProjet 
+                        title="Ce Portfolio !"
+                        entreprise="Projet Personnel"
+                        description="Car un portfolio c'est déjà un projet en soit !"
+                        Link="Portfolio"/>
+                    </div>
 
             </section>
         )

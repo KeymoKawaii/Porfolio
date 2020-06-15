@@ -36,7 +36,7 @@ export default class ExpPro extends React.Component{
         };
     
        render() {
-        let status,classe; 
+        let status; 
         if (this.state.list === "Dewan") {
           status = <Dewan/>;
         } else if (this.state.list === "WekerStage") {

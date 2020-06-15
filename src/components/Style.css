@@ -52,6 +52,9 @@ section{
 .PartBlanc hr{
     border: 1px solid rgb(27, 27, 27);
 }
+.PartBlanc a{
+    color: rgb(27, 27, 27);
+}
 
 .PartNoir{
     background-color: rgb(27, 27, 27);
@@ -61,7 +64,39 @@ section{
     border: 1px solid white;
 }
 
-  
+.PointProjet{
+    text-align: center;
+}
+.PointProjet img{
+    height: 40vh;
+    /* margin: 5px; */
+}
+.PointProjet div div ul img{
+    height: auto;
+    /* margin: 5px; */
+}
+.PointProjet div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.PointProjet div div{
+    width: 25%;
+    min-width: 300px;
+    margin: 20px;
+    flex-direction: column;
+}
+.PointProjet ul{
+    list-style-type: none;
+}
+.PointProjet ul img{
+    width: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+.PointProjet .paragraphe{
+    width: 60%;
+}
 /* Style Général */
 
 /* Navigation */
@@ -214,6 +249,7 @@ nav ul li:hove{
     padding: 3%;
     box-shadow: 0 9px rgba(153, 153, 153, 0.5);
     margin: 5px;
+    cursor: pointer;
 }
 .ExpPro .Nav button:active{
     transform: translateY(4px);
@@ -222,6 +258,46 @@ nav ul li:hove{
     width: 60%;
     min-width: 300px;
     margin: auto;
+}
+
+.Projet div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+.Projet div div{
+    width: 25%;
+    min-width: 300px;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+}
+.Projet div div h3{
+    width: 100%;
+}
+
+.PointProjet{
+    min-height: 100vh;
+}
+
+.Contact{
+    text-align: center;
+}
+.Contact form{
+    width: 75%;
+    margin: auto;
+}
+.Contact p{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Contact p input, .Contact p textarea{
+    width: 100%;
 }
 /* ANIMATION */
 @keyframes title{
