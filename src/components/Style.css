@@ -298,6 +298,13 @@ nav ul li:hove{
 }
 .Contact p input, .Contact p textarea{
     width: 100%;
+    background-color: rgb(27, 27, 27);
+    color: rgb(209, 209, 209);
+    min-height: 5vh;
+    border-radius: 10px;
+}
+.Contact p textarea{
+    min-height: 20vh;
 }
 /* ANIMATION */
 @keyframes title{
