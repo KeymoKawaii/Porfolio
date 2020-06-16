@@ -289,7 +289,7 @@ nav ul li:hove{
     text-align: center;
 }
 .Contact form{
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
 }
 .Contact p{
@@ -315,7 +315,7 @@ nav ul li:hove{
 /* Medias Queries */
 @media screen and (max-width: 450px) {
     .Projet div div {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 /* ANIMATION */
