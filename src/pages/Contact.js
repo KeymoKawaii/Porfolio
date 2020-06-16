@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const About = () => (
     <section className="PartBlanc Contact">
-      <SEO title="Contact" />
+      <SEO/>
       <h3>Contactez-moi</h3>
       <hr />
 

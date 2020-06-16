@@ -1,4 +1,5 @@
 import React , {Fragment} from 'react';
+import Bounce from 'react-reveal/Bounce';
 
 import Dewan from '../../components/RootingExpPro/Dewan';
 import SWeker from '../../components/RootingExpPro/SWeker';
@@ -38,11 +39,11 @@ export default class ExpPro extends React.Component{
        render() {
         let status; 
         if (this.state.list === "Dewan") {
-          status = <Dewan/>;
+          status = <Bounce when={this.changeDewan}><Dewan/></Bounce>;
         } else if (this.state.list === "WekerStage") {
-          status =<SWeker/>;
+          status =<Bounce><SWeker/></Bounce>;
         }else if (this.state.list === "WekerServiceCiv") {
-          status = <SCWeker/>;
+          status = <Bounce><SCWeker/></Bounce>;
         }
     
            return (

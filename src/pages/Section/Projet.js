@@ -1,7 +1,5 @@
 import React from 'react';
-import "animate.css/animate.min.css";
 // import { StaticQuery } from 'gatsby';
-import ScrollAnimation from 'react-animate-on-scroll';
 import BullesProjet from './../../components/BullesProjet';
 import Dewan from '../../images/DewanDev.png'
 

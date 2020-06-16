@@ -1,5 +1,4 @@
 import React from 'react';
-import "animate.css/animate.min.css";
 import Layout from '../components/layout';
 
 import WE from '../images/Affiche_blosne.png'

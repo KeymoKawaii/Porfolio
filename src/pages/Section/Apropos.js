@@ -1,6 +1,6 @@
 import React from 'react';
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+import Fade from 'react-reveal/Fade';
 import Logonoir from '../../images/Logonoir.png';
 
 export default class Propos extends React.Component{
@@ -11,10 +11,11 @@ export default class Propos extends React.Component{
                 <hr/>
 
                 <div>
-                    <ScrollAnimation className="imgLogo" animateIn='bounceInRight'
-                        animateOut='bounceOutLeft'>
+                    <Fade>
+                    <div className="imgLogo">
                     <img src={Logonoir} alt="Logo Keymo Noir" />
-                    </ScrollAnimation>
+                    </div>
+                    </Fade>
                 <p>
                     Je m'appelle Paolo Trapu, j'ai 20 ans, suite à l'obtention de mon bac STI2D (option: SIN) j'ai passé quelques temps à monter mon projet professionnel via plusieurs actions
                     (Service civique, formations,...)

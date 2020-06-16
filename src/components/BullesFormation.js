@@ -1,18 +1,18 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
+import Fade from 'react-reveal/Fade';
 
 
 export default class BullesFormation extends React.Component{
     render(){
         return(
-            <ScrollAnimation className="PartBlanc BullesFormation"
-            animateIn='fadeIn'>
+            <Fade>
+                <div className="PartBlanc BullesFormation">
                 <h3>{this.props.title}</h3>
-                <hR />
-                <p><span>{this.props.date}</span></p>
-                <p>{this.props.description}</p>
-                </ScrollAnimation>
+                    <hr />
+                    <p><span>{this.props.date}</span></p>
+                    <p>{this.props.description}</p>
+                </div>
+                </Fade>
         )
     }
 }
