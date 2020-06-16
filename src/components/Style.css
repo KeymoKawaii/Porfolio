@@ -294,20 +294,30 @@ nav ul li:hove{
 }
 .Contact p{
     width: 50%;
-    margin: auto;
+    min-width: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin: auto;
 }
 .Contact p input, .Contact p textarea{
     width: 100%;
+    min-width: 300px;
     background-color: rgb(27, 27, 27);
     color: rgb(209, 209, 209);
     min-height: 5vh;
     border-radius: 10px;
+    margin: auto;
 }
 .Contact p textarea{
     min-height: 20vh;
 }
+
+/* Medias Queries */
+@media screen and (max-width: 450px) {
+    .Projet div div {
+      font-size: 12px;
+    }
+  }
 /* ANIMATION */
 @keyframes title{
     from{
