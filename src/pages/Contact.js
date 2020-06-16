@@ -8,7 +8,7 @@ const About = () => (
       <SEO title="Contact" />
       <h3>Contactez-moi</h3>
       <hr />
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="send-place" action="/send-place" method="POST" enctype="multipart/form-data"  data-netlify="true">
         <p>
           <label>Votre Nom: <input type="text" name="name" /></label>   
         </p>
@@ -21,7 +21,6 @@ const About = () => (
         <p>
           <button type="submit">Envoyer</button>
         </p>
-        <input type="hidden" name="form-name" value="name-of-form" />
       </form>
     </section>
 )
