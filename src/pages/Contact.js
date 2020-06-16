@@ -8,7 +8,7 @@ const About = () => (
     <SEO title="Contact" />
     <h3>Contactez-moi</h3>
     <hr />
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
       <p>
         <label>Votre Nom: <input type="text" name="name" /></label>   
       </p>

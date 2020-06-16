@@ -259,21 +259,23 @@ nav ul li:hove{
     min-width: 300px;
     margin: auto;
 }
-
+.Projet{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .Projet div{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     width: 100%;
     padding-top: 2vh;
     padding-bottom: 3vh;
 }
 .Projet div div{
-    width: 25%;
-    min-width: 300px;
-    text-align: center;
-    padding: 2%;
-    border-radius: 10px;
+    width: 100%;
+    padding: 0.5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: left;
+    height: 20vh;
+    margin-top: 2%;
 }
 .Projet div div h3{
     width: 100%;
