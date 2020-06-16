@@ -21,6 +21,7 @@ const About = () => (
         <p>
           <button type="submit">Envoyer</button>
         </p>
+        <input type="hidden" name="form-name" value="name-of-form" />
       </form>
     </section>
 )
