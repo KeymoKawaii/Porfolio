@@ -315,7 +315,7 @@ nav ul li:hove{
 /* Medias Queries */
 @media screen and (max-width: 450px) {
     .Projet div div {
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 /* ANIMATION */
