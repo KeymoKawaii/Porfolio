@@ -51,8 +51,14 @@ export default class Projet extends React.Component{
                         <BullesProjet 
                         title="Affiche pour We Ker"
                         entreprise="We Ker"
-                        description="Création d'une affiche pour la permanence du Blosne de We Ker"
+                        description="Création d'une affiche pour la permanence du Blosne de We Ker."
                         Link="WeKer"/>
+
+                        <BullesProjet 
+                        title="Webagency"
+                        entreprise="Openclassrooms"
+                        description="Mon premier projet en développement web."
+                        Link="Webagency"/>
 
                         <BullesProjet 
                         title="Ce Portfolio !"
